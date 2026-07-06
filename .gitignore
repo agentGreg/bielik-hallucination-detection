@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS cruft
+.DS_Store
+
+# Data (raw datasets are not shipped)
+data/
+
+# Results: ignore everything under results/ except the shipped trained probes.
+# Negation requires the intermediate directory levels to stay un-ignored, so we
+# ignore file contents one level deep (results/*/*) rather than the dirs, then
+# re-include the probe files.
+results/*/*
+!results/*/risk_probe.npz
+
+# LaTeX build artifacts (paper source is tracked; builds are not)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/main.pdf

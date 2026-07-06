@@ -1,0 +1,12 @@
+# Hugging Face Spaces dependencies for the Bielik hallucination-risk demo.
+# Rename to `requirements.txt` when pushing to the Space repo (see spaces/README-space.md).
+#
+# The Space runs on CPU (cpu-basic). We pull torch from the CPU wheel index so
+# no CUDA build is downloaded, keeping the image small and the cold start fast.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.4.1
+transformers==4.44.2
+gradio==4.44.1
+numpy==1.26.4
+huggingface_hub==0.24.7
