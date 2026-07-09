@@ -4,7 +4,7 @@
 
 Author: **Grzegorz Brzezinka** (Prosit AS)
 Contact: greg@prosit.no
-Paper: *arXiv: coming soon* (preprint in preparation)
+Paper: [arXiv:2607.07670](https://arxiv.org/abs/2607.07670)
 
 **Status:** the long version (this repository) is being prepared for arXiv; a
 condensed version is currently under peer review (venue withheld for double-blind
@@ -192,7 +192,10 @@ results/<slug>/       shipped trained probes (risk_probe.npz)
             Model Scale},
   author = {Brzezinka, Grzegorz},
   year   = {2026},
-  note   = {Preprint in preparation. arXiv: coming soon.}
+  eprint = {2607.07670},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  url    = {https://arxiv.org/abs/2607.07670}
 }
 ```
 
